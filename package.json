@@ -1,5 +1,5 @@
 {
-    "name": "tic-tac-toe",
+    "name": "incrementor-thingy",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
