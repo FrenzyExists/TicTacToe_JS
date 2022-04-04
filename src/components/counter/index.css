@@ -1,0 +1,46 @@
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner,
+button {
+    padding: 0;
+    border-style: none;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn-dark {
+    background-color: #535d66;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    color: #fff;
+    border-color: #1d2124;
+    background-color: #23272b;
+}
+
+.btn {
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition:
+        color .15s ease-in-out,
+        background-color .15s ease-in-out,
+        border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out
+}
+
+.btn:focus,
+.btn:hover {
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-color: currentcolor;
+    text-decoration-thickness: auto;
+}

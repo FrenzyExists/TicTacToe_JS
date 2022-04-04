@@ -1,0 +1,15 @@
+.item {
+    font-size: 3rem;
+    text-align: center;
+    width: 7rem;
+    height: 7rem;
+    background-color: #3D4059;
+    margin: 1rem;
+    border-radius: 14px;
+    color: #C6D0E9;
+    font-weight: 600;
+}
+
+.item:hover {
+    background-color: #34364b;
+}

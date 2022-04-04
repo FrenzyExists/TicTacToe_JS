@@ -1,0 +1,38 @@
+:root {
+    --gui00: #20202A;
+    --gui01: #2C2E3E;
+    --gui05: #63718b;
+    --gui06: #313449;
+    --gui08: #EBB9B9;
+    --gui07: #1A1A24;
+    --gui09: #E8CCA7;
+    --gui0D: #CDDBF9;
+
+    --font1: 'Manjari';
+    --font2: 'Mali', cursive;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background: var(--gui06);
+}
+
+
+.App {
+    text-align: center;
+
+}
+
+.App-Head {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}

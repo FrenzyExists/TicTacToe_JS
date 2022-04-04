@@ -1,0 +1,7 @@
+.wrapper-container {
+    /* width: 36rem; */
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}

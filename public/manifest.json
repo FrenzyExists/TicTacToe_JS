@@ -1,0 +1,24 @@
+{
+    "short_name": "Fun Facts",
+    "name": "Fun Facts: The App, The Meme, Ur Mom",
+    "icons": [{
+            "src": "favicon.ico",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "zap192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "zap512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#63718b",
+    "background_color": "#2C2E3E"
+}
