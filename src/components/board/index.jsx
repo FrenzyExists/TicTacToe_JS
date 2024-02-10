@@ -2,27 +2,18 @@ import {React, useState} from 'react'
 import './index.css';
 import Square from '../square'
 
-const Board = ({x, y, ruleFunction}) => {
-    const [boardList, setBoardList] = useState( () => {
-        return Array.from(Array(y*x).fill(null))
-    });
-    
-    const handleClick = (boxId) => {
-        const copy = [...boardList]
-        if (ruleFunction) {
-            copy = ruleFunction(copy)
-        } else {
-            copy[boxId] = copy[boxId] === 'X' ? '' : 'X'    
-        }
-        setBoardList(copy)
-        console.log(boxId)
-    }
+/**
+ * 
+ * @param {Array[Array]} board 
+ * @returns 
+ */
+const Board = ({board, x, y, ruleFunction}) => {
 
     const generateBoard = () => {
         let b = ''
-        const a = boardList.map((value, i) => {
-            b += i % x === x-1 ? 'auto ' : ''
-            return (<Square key={i} value={value} onClick={() => handleClick(i)} />)
+        const a = board.map((value, i) => {
+            b += i % y === y-1 ? 'auto ' : ''
+            return (<Square key={i} value={value} onClick={() => ruleFunction(i)}/>)
         })
         let styles = {
             display: 'grid',

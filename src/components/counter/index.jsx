@@ -1,24 +1,11 @@
-import {React, useState} from 'react'
+import {React} from 'react'
 import './index.css';
  
-
-const Counter = () => {
-    const [count, setCount] = useState(0);
-
-    const formatCount = () => {
-        return count === 0 ? 'Zero' : count;
-    }
-
-
-    const incrementCount = (e) => {
-        setCount(count+1)
-    }
+const Counter = ({winner, playerTurn}) => {
 
     return (
         <div>
-            <span>{formatCount()}</span>
-            <h1>Boi</h1>
-            <button type="button" onClick={incrementCount} className="btn btn-dark">Increment</button>
+            <h2 className='counter'>{winner ? `Player ${winner} won!` : `Player ${playerTurn}'s turn`}</h2>
         </div>
     );
 }

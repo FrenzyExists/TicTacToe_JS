@@ -1,15 +1,63 @@
 .item {
-    font-size: 3rem;
-    text-align: center;
-    width: 7rem;
-    height: 7rem;
-    background-color: #3D4059;
-    margin: 1rem;
+    background-color: var(--gui06);
+    border: solid transparent;
     border-radius: 14px;
-    color: #C6D0E9;
+    border-width: 0 0 11px;
+    box-sizing: border-box;
+    color: var(--gui0D);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 3rem;
+    width: calc(7rem + 1.5vw);
+    height: calc(7rem + 1.5vw);
     font-weight: 600;
-}
-
-.item:hover {
-    background-color: #34364b;
-}
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 1rem;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .item:after {
+    background-clip: padding-box;
+    background-color: var(--gui0E);
+    border: solid transparent;
+    border-radius: 14px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .item:main,
+  .item:focus {
+    user-select: auto;
+  }
+  
+  .item:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  .item:disabled {
+    cursor: auto;
+  }
+  
+  .item:active {
+    border-width: 4px 0 0;
+    background: none;
+  }
