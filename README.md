@@ -1,3 +1,13 @@
+# Tic Tac Toe
+
+Literally just that. Pretty simple tbh. At the time of writting this it doesn't have the game implemented perse, just the visuals. Modes to be implemented are:
+
+- Game loop
+- [ ] Difficulty settings
+  - Easy: AI is just picking a random spot
+  - Normal: AI puts some effort based on player move
+  - Evil: Board is bigger, AI is evil
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
