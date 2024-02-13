@@ -7,9 +7,22 @@ import { useState } from 'react';
 import Counter from './components/counter';
 
 function App() {
-  const gameMode = ['Normal', '2-Player', 'Evil',]
+  const gameMode = ['Easy', 'Normal', '2-Player', 'Evil',]
   const [currentGameModeIndex, setCurrentGameModeIndex] = useState(0);
+  const [gridSize, setGridSize] = useState([3,3]);
 
+  function easy (board, x, y, bot_symbol, player_symbol) {
+    let end = true;
+    let pos;
+    while (!end) {
+      pos = Math.floor(Math.random()*x*y)
+      if (board[pos] !== player_symbol) {
+        board[pos] = bot_symbol
+        end = !end
+      }
+    }
+    return
+  }
 
 
   return (
@@ -17,7 +30,7 @@ function App() {
       <Navbar gameMode={gameMode} currentGameModeIndex={currentGameModeIndex} setIndexFunction={setCurrentGameModeIndex}/>
       <Counter playerTurn={1} winner={false} />
       <header className="App-Head">
-        <GameInspector x={3} y={3} />
+      <GameInspector x={gridSize[0]} y={gridSize[1]} />
       </header>
       <Footer />
     </div>

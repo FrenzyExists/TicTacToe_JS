@@ -8,6 +8,16 @@ Literally just that. Pretty simple tbh. At the time of writting this it doesn't 
   - Normal: AI puts some effort based on player move
   - Evil: Board is bigger, AI is evil
 
+
+Game uses react (the basics of it) since lets be real here, its just tic-tac-toe
+
+Still haven't decided how to work the game mechanics. Just figured a way to check who won at any grid size.
+
+Also I want to use emojis for this, but I still don't visualize how that would work. I somewhat visualize a floating window where the player can choose an emoji and select the bot's emoji, kinda like a character selection. Don't wanna spend much time here so not sure how long will that take me.
+
+Also doing a DB just for the score sounds not so great tbh. Prolly the score would be saved in the computer's mem or something, whatever is easiest.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
